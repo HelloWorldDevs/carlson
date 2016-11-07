@@ -61,11 +61,11 @@ section {
 
 
 .margin-btm {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .margin-btm-half {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .margin-btm-no {
@@ -73,7 +73,7 @@ section {
 }
 
 .margin-btm-2x {
-  margin-bottom: 60px;
+  margin-bottom: 80px;
 }
 
 .margin-top {
@@ -155,7 +155,7 @@ section {
 .bg-centered {
   background-position: center;
   @media (max-width: $width-md) {
-    background-position: left;
+    //background-position: left;
   }
 }
 
@@ -296,7 +296,7 @@ button[class=close] {
 }
 
 #section-insurance {
-  background-image:url('/assets/membership-row-paul-lee.jpg');
+  background-image:url('/assets/membership-row-reisig.jpg');
   @media (max-width: $width-sm) {
     background-image: none;
     & .insurance-mobile-fix {
