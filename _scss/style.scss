@@ -148,8 +148,6 @@ a {
 	color: inherit;
 }
 
-a:hover { color: #222; }
-
 a img { border: none; }
 
 img { max-width: 100%; }
@@ -719,24 +717,6 @@ html[xmlns] .slider-wrap {display: block;}
 -----------------------------------------------------------------*/
 
 #primary-menu > ul > li > a:hover {
-	color: #68605B;
-	text-decoration: underline;
-}
-
-#primary-menu > ul > li:nth-child(1) > a:hover {
-	color: #31A2BF;
-	text-decoration: underline;
-}
-
-
-#primary-menu > ul > li:nth-child(2) > a:hover {
-	color: #2e8b9c;
-	text-decoration: underline;
-}
-
-
-#primary-menu > ul > li:nth-child(3) > a:hover {
-	color: #6e949c;
 	text-decoration: underline;
 }
 
@@ -1042,7 +1022,7 @@ body.stretched #header.full-header .container {
 }
 
 #logo img {
-	display: block;
+	display: inline-block;
 	max-width: 100%;
 }
 
@@ -1146,7 +1126,6 @@ body.stretched #header.full-header .container {
 	display: block;
 	line-height: 22px;
 	padding: 39px 15px;
-	color: #444;
 	font-weight: bold;
 	font-size: 13px;
 	letter-spacing: 1px;
@@ -2003,7 +1982,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 #header,
 #header-wrap,
 #logo img {
-	height: 100px;
+	height: 80px;
 	-webkit-transition: height .4s ease, opacity .3s ease;
 	-o-transition: height .4s ease, opacity .3s ease;
 	transition: height .4s ease, opacity .3s ease;
@@ -2064,7 +2043,6 @@ body.top-search-open #top-account { opacity: 0; }
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: #FFF;
 	box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
@@ -2072,10 +2050,10 @@ body.top-search-open #top-account { opacity: 0; }
 
 #header.sticky-header:not(.static-sticky),
 #header.sticky-header:not(.static-sticky) #header-wrap,
-#header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img { height: 60px; }
+#header.sticky-header:not(.static-sticky):not(.sticky-style-2):not(.sticky-style-3) #logo img { height: 80px; }
 
 #header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
-	padding-top: 19px;
+	padding-top: 29px;
 	padding-bottom: 19px;
 }
 

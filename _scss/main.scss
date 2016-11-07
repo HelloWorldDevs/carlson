@@ -329,3 +329,10 @@ button[class=close] {
 #bf-revz-widget-215105154 {
   max-height: 1000px;
 }
+
+//Custom Site Fixes
+#logo img[src="assets/vertical-stripes.png"] {
+  @media screen and (max-width: 1050px) {
+    display: none;
+  }
+}
