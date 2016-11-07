@@ -1,3 +1,5 @@
 node_modules
 .DS_Store
-siteconfig.yml
+siteConfig.py
+scripts
+*.pyc
