@@ -1,4 +1,6 @@
 .phone-slab {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
 
   h1,
   h2,
@@ -21,7 +23,7 @@
   }
   &__left {
     text-align: right;
-    border-right: solid 2px #A69F9B;
+    border-right: solid 2px #3A2A31;
     @media screen and (max-width: $width-md) {
       text-align: center;
       border-right: none;
