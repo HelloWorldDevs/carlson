@@ -41,7 +41,7 @@
 
   var HWD = new HelloWorldDevs();
 
-  HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.price-box-h3-mid');
+  HWD.noOrphans('h1,h2,h3,h4,h5,h6,li,p', '.price-box-h3-mid,.allow-orphan');
   HWD.mailForm('#mail-form', '#success_msg' , '7fb35345-752d-4792-9480-cd3db6674a62');
 
   // initial carousel in modal
