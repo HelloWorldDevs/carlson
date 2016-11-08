@@ -75,6 +75,30 @@
   }
 }
 
+@keyframes kenburns_text {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  25% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  80% {
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
 .kb__image--1 {
   max-width: 110%;
   width: 110%;
@@ -111,7 +135,12 @@
   animation: kenburns_3 8s;
 }
 
-.swiper-slide:not(.swiper-slide-active)>img {
+.swiper-slide:not(.swiper-slide-active)>img,
+.swiper-slide:not(.swiper-slide-active)>.kb__text {
   display: none;
   visibility: none;
+}
+
+.swiper-slide-active .kb__text {
+  animation: kenburns_text 8s;
 }
