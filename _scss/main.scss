@@ -354,3 +354,10 @@ button[class=close] {
     margin-top: -100px;
   }
 }
+
+.carlson-img-fix-clipped {
+  @media screen and (min-width: $width-sm) {
+    display: none;
+    visibility: none;
+  }
+}
