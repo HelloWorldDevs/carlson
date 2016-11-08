@@ -355,6 +355,16 @@ button[class=close] {
   }
 }
 
+.willis-img-fix {
+  position: absolute;
+  bottom: 0px;
+  right: 0;
+  @media screen and (min-width: $width-lg) {
+    margin-top: -100px;
+  }
+}
+
+
 .carlson-img-fix-clipped {
   @media screen and (min-width: $width-sm) {
     display: none;
