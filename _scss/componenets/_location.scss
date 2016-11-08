@@ -3,6 +3,7 @@
   border-radius: 15px;
   margin: 30px 0;
   @media (max-width: $width-md) {
+    margin-bottom: 5px;
     margin-top: 0px;
     background-color: rgba(255, 255, 255, 0);
   }
@@ -26,11 +27,17 @@
   left: 50%;
   margin-left: -570px;
   @media (max-width: $width-md) {
+    padding-left: 0;
+    padding-right: 0;
     position: static;
     text-align: center;
     width: 100% !important;
     margin-left: 0px;
     background-color: #f9f9f9;
+    & .floating-card--col-fix {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 }
 
