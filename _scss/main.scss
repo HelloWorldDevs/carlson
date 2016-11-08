@@ -361,9 +361,6 @@ button[class=close] {
   position: absolute;
   bottom: 0px;
   right: 0;
-  @media screen and (min-width: $width-lg) {
-    margin-top: -100px;
-  }
 }
 
 
