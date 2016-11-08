@@ -1,10 +1,15 @@
 .location-card {
   background: white;
-  border-radius: 10px;
+  border-radius: 15px;
   margin: 30px 0;
   @media (max-width: $width-md) {
     margin-top: 0px;
     background-color: rgba(255, 255, 255, 0);
+  }
+  &__bottom {
+    background-color: #7BD1EA;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 }
 
@@ -36,10 +41,22 @@
   }
 }
 
-.location-logo img {
-  max-width: 350px;
-  @media (max-width: $width-xs) {
-    max-width: 200px;
+#section-location {
+  border-top: 5px solid white;
+  border-bottom: 5px solid white;
+}
+
+#section-location .location-logo {
+  background-color: #3A2A31;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: 5px solid white;
+  padding-bottom: 15px;
+  & img {
+    max-width: 350px;
+    @media (max-width: $width-xs) {
+      max-width: 200px;
+    }
   }
 }
 
