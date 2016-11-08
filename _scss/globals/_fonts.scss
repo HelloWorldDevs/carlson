@@ -275,7 +275,6 @@ p {
 
 .area-byline {
 	font-size: 48px;
-	margin: 150px 0px;
 	@media screen and (max-width: $width-lg) {
 		font-size: 38px;
 	}
@@ -299,6 +298,13 @@ p {
 	max-width: 250px;
 }
 
-#section-services p {
+#section-services p,
+#section-services-two p {
+	line-height: 1.25;
 	margin-bottom: 20px;
+}
+
+#section-services h5,
+#section-services-two h5 {
+	margin-bottom: 10px;
 }

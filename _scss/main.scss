@@ -346,3 +346,11 @@ button[class=close] {
   background-size: cover;
   background-repeat: none;
 }
+
+.carlson-img-fix {
+  position: absolute;
+  bottom: 0px;
+  @media screen and (min-width: $width-lg) {
+    margin-top: -100px;
+  }
+}
