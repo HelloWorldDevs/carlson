@@ -95,18 +95,18 @@
     });
 
   $('#google-map5').gMap({
-    address: '29.7488927,-95.4692716',
+    address: '33.2119608,-87.515528',
     maptype: 'ROADMAP',
     zoom: 15,
     markers: [
       {
-        address: "29.7485368,-95.4727371"
+        address: "33.2123608,-87.520528"
       }
     ],
     doubleclickzoom: false,
     controls: {
       panControl: false,
-      zoomControl: true,
+      zoomControl: false,
       mapTypeControl: false,
       draggable: false,
       scaleControl: false,
