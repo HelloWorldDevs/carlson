@@ -89,10 +89,10 @@
     autoplayHoverPause:true
   });
 
-   new Swiper('.swiper-container', {
-      speed: 400,
-      autoplay: 7000
-    });
+  new Swiper('.swiper-container', {
+    speed: 400,
+    autoplay: 7000
+  });
 
   $('#google-map5').gMap({
     address: '33.2119608,-87.515528',

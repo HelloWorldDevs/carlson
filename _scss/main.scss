@@ -92,6 +92,9 @@ section {
 
 .margin-top-3p {
   margin-top: 100px;
+  @media (max-width: $width-lg) {
+    margin-top: 70px;
+  }
 }
 
 .margin-top-md {
@@ -247,9 +250,11 @@ button.btn {
   text-transform: uppercase;
 }
 
-a[href="http://www.tysonsteele.com/"],
-a[href="http://www.tysonsteele.com/"]:hover {
+a[href="http://www.tysonsteele.com/"] {
   color: #FFF;
+  &:hover {
+    text-decoration: underline !important;
+  }
 }
 
 a:hover {

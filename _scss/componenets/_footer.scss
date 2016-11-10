@@ -13,6 +13,7 @@ a.si-facebook {
   margin-right: 20px;
   @media (max-width: $width-md) {
     float: none;
+    margin-right: 0;
   }
 }
 
