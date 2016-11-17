@@ -117,6 +117,11 @@ section {
   padding-bottom: 30px;
 }
 
+.padding-top {
+  padding-top: 30px;
+}
+
+
 .padding-vert-2x {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -339,7 +344,7 @@ button[class=close] {
 
 //Custom Site Fixes
 #logo img[src="assets/vertical-stripes.png"] {
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: $width-md) {
     display: none;
   }
 }
@@ -382,4 +387,14 @@ input[type='email'],
 input[type='phone'],
 textarea {
   font-size: 16px;
+}
+
+#logo a:hover {
+  text-decoration: none;
+}
+
+#section-phone-slug-2 .col-md-6.phone-slab__right.margin-btm-half {
+  @media screen and (max-width: $width-md) {
+    margin-bottom: 0;
+  }
 }
