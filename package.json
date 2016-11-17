@@ -1,20 +1,29 @@
 {
-  "name": "dr_vlk",
+  "name": "carlson",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {
-
+  "dependencies": {
+    "browser-sync": "^2.18.1",
+    "node-sass": "^3.13.0",
+    "nodemon": "^1.11.0",
+    "sassdoc": "^2.1.20"
   },
+  "devDependencies": {},
   "scripts": {
     "compile:css": "node-sass --output-style=expanded --source-map-embed _scss/main.scss css/main.css",
     "watch:css": "node-sass --watch --output-style=expanded --source-map-embed _scss/main.scss css/main.css",
     "clean": "rm -rf _site",
+    "compile:sassdoc": "sassdoc _scss/",
+    "watch:sassdoc": "nodemon --exec 'npm run compile:sassdoc' --ext scss ./_scss",
+    "open:sassdoc": "open sassdoc/index.html",
+    "compile": "npm run compile:css & npm run compile:sassdoc",
+    "watch": "npm run watch:css & npm run watch:sassdoc",
     "serve": "browser-sync start --server --files=*.html,css/*.css",
-    "start": "npm run clean && npm run compile:css && npm run watch:css & npm run serve",
+    "start": "npm run clean && npm run compile && npm run open:sassdoc && (npm run watch & npm run serve)",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "bash scripts/deploy.sh reisig"
+    "old:deploy": "bash scripts/deploy.sh reisig",
+    "deploy": "git push origin master && ./deploy.py && open http://carlson.hwdevs.site"
   },
   "author": "",
   "license": "ISC"
